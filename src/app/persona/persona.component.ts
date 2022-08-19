@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./persona.component.css']
 })
 export class PersonaComponent {
-
-  constructor() { }
+  nombre: string = "diego";
+  apellido: string = 'bacuy'
+  edad: number = 28;
+  // getEdad(): number {
+  //   return this.edad;
+  // }
 }

@@ -5,4 +5,16 @@ import { Component } from "@angular/core";
     templateUrl: './personas.component.html',
     styleUrls: ['./personas.component.css']
 })
-export class PersonasComponent { }
+export class PersonasComponent {
+    deshabilitar = false;
+    mensaje = 'No se ha creado ninguan persona';
+    titulo = 'Ingeniero';
+    crearPersona() {
+        this.mensaje = 'Se ha creado una persona';
+    }
+    // El codigo siguiente corresponde a (event biding), pero dejó de ser necesario al 
+    // utilizar 2way-biding
+    // modificarTitulo(event: Event) {
+    //     this.titulo = (event.target as HTMLInputElement).value;
+    // }
+}

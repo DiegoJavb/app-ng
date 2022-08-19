@@ -1,9 +1,14 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Listado</h1>
+            <h1>Listado de personas</h1>
+            <button class="btn btn-primary" [disabled]="deshabilitar" (click)="crearPersona()">Agregar persona</button>
+            <p>{{mensaje}}</p>
             <app-persona></app-persona>
-            <app-persona></app-persona>
+            <label> Título Persona</label>
+            <!-- La variable para capturar la informacion de un input text es "$event" -->
+            <!-- <input type="text" class="form-control" (input)="modificarTitulo($event)"/>{{titulo}} -->
+            <input type="text" class="form-control" [(ngModel)]="titulo"/>{{titulo}}
         </div>
     </div>
 </div>
